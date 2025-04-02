@@ -58,11 +58,32 @@ console.log(names.indexOf('ivan', 2))
 **первый** значение если оно удовлетворяют условиям функции.
 ```js
 const numbers = [3, 12, 6, 13, 44]
-console.log(numbers.find((element) => element > 10))
+const even = (element) => element % 2 === 0
+
+console.log(array.some(even))
 // 12
 ```
 
 > если метод `find()` найдет элемент с удовлетворяющим значением, поиск сразу же остновится, а метод вернет тебе первый элемент
+
+## _some()_
+Метод [`some()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+``` js
+const numbers = [1, 2, 3, 4, 5]
+console.log((element) => element % 2 === 0)
+// true
+```
+
+## _every()_ 
+Метод [`every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) вернет **true** если ***каждый*** элемент удовлетворяет условиям функции, иначе вернет **false**.
+```js
+const numbers = [12, 21, 51, 32]
+const fn = (item) => item > 10
+
+console.log(numbers.every(fn))
+// true
+```
+
 
 # Редактирование
 ## _join()_
@@ -75,3 +96,4 @@ console.log(names.join(''))
 console.log(names.join(', '))
 // eva, ivan, oleg, ivan
 ```
+
