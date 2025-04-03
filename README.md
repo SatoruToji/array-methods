@@ -1,10 +1,9 @@
+1. <a href="#Добавление-и-удаление">Добавление и Удаление</a>
+2. <a href="#Поиск">Поиск элементов</a>
+3. <a href="#Редактирование">Редактирование</a>
+4. <a href="#Сортировка">Сортировка</a>
 
-
-<a href="#Добавление-и-удаление">
-    добавление и удаление элементов
-</a>
-
-
+<br><br>
 # Добавление и удаление 
 ## _push()_
 Метод [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) добавляет элемент в **конец** массива и возвращает новую длину массива
@@ -14,7 +13,6 @@ console.log(names.push('oleg'))
 // ['eva', 'ivan', 'oleg']
 ```
 > Если элементов нет, метод сам создаст элемент и поместит в новый элемент значение.
-<br><br>
 
 ## pop()
 Метод [`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) удаляет **последний** элемент массива и возвращает его.
@@ -23,7 +21,6 @@ const names = ['eva', 'ivan']
 console.log(names.pop())
 // ivan
 ```
-<br><br>
 
 ## shift()
 Метод [`shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) удаляет **первый** элемент массива и возвращает его. 
@@ -32,7 +29,6 @@ const names = ['eva', 'ivan']
 console.log(names.shift())
 // eva
 ```
-<br><br>
 
 ## unshift()
 Метод [`unshift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) добавляет элемент в **начало** массива.
@@ -49,8 +45,7 @@ console.log(names)
 | shift | удалит с начала 🗑️|
 | unshift | добавит в начало ➕|
 
-# testsss
-
+<br><br>
 # Поиск 
 ## _indexOf()_
 Метод [`indexOf(value, startSearch)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) возвращает индекс элемента (если он присутствует в массиве, иначе вернет `-1`)
@@ -62,7 +57,7 @@ console.log(names.indexOf('ivan', 2))
 // 3
 ```
 > `startSearch` - индекс, с которого начнется поиск
-<br><br>
+
 
 ## _find()_
 Метод [`find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find) возвращает 
@@ -76,7 +71,6 @@ console.log(array.some(even))
 ```
 
 > если метод `find()` найдет элемент с удовлетворяющим значением, поиск сразу же остновится, а метод вернет тебе первый элемент
-<br><br>
 
 ## _some()_
 Метод [`some()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some) вернет bool если элемент массива удовлетворяет или не удовлетворяет условию поиска
@@ -85,8 +79,6 @@ const numbers = [1, 2, 3, 4, 5]
 console.log((element) => element % 2 === 0)
 // true
 ```
-<br><br>
-
 > Отдельное внимание разнице `some()` и `find()`
 
 |                | find()  | some() |
@@ -94,7 +86,6 @@ console.log((element) => element % 2 === 0)
 | если найдет:   |`value`|`true`|
 | если не найдет:|`undefined`|`false`|
 | отличия:       |если найдет: вернет эл. и сразу прекратит перебор|вернет bool в зависимости от поиска|
-<br><br>
 
 ## _every()_ 
 Метод [`every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every) вернет **true** если ***каждый*** элемент удовлетворяет условиям функции, иначе вернет **false**
@@ -117,7 +108,6 @@ console.log(names.join(''))
 console.log(names.join(', '))
 // eva, ivan, oleg, ivan
 ```
-<br><br>
 
 ## _reverse()_
 Метод [`reverse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) переворачивает массив на 180 
@@ -126,7 +116,6 @@ let nums = [1, 2, 3, 4, 5]
 console.log(nums.reverse())
 // [5, 4, 3, 2, 1]
 ```
-<br><br>
 
 ## _from()_
 Метод глобального объекта `Array` [`from()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) создает массив из ***итерируемого*** объекта
@@ -139,7 +128,6 @@ console.log(result)
 console.log(Array.from(str, (i) => Number(i)))
 // [2, 3, 4, 1]
 ```
-<br><br>
 
 ## _flat()_
 Метод [`flat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat) "выравнивает" массив, метод принимает **двумерный/трёхмерный** массив, и возвращает обычный массив без вложенных массивов
@@ -153,8 +141,8 @@ console.log(nums2.flat(infinity))
 // [0, 1, 2, 3, 4, 5]
 ```
 > Примечание: по умолчанию, `flat()` выравнивает двумерные массивы, потму что двумерные массивы соответствуют уровню глубины вложенности `1`
-<br><br>
 
+<br><br>
 # Сортировка 
 ## _sort()_
 Метод [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) ***переводит элементы массива в строки***, а потом (по умолчанию) сортирует их в ***алфовитном порядке*** 
