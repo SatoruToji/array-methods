@@ -1,11 +1,11 @@
 
 
-<a href="#testsss">
-    testsss
+<a href="#Добавление-и-удаление">
+    добавление и удаление элементов
 </a>
 
 
-# Добавение и удаление 
+# Добавление и удаление 
 ## _push()_
 Метод [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) добавляет элемент в **конец** массива и возвращает новую длину массива
 ```js
