@@ -1,0 +1,15 @@
+{
+  "name": "array-methods",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SatoruToji/array-methods",
+  "author": "satorutoji <ezdummyacc@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "ts": "ts-node"
+  }
+}
