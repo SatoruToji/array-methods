@@ -1,10 +1,12 @@
-const nums = [1, 2, 3]
-// const firstElement = array1.shift()
+export {}
 
-// console.log(array1)
-// console.log(firstElement)
+declare global {
+    interface Array<T> {
+        myshift(): T | undefined
+    }
+}
 
-Array.prototype.myshift = function () {
+Array.prototype.myshift = function <T>(): T | undefined {
     if (this.length === 0) return undefined
     const firstElement = this[0]
     for (let i = 1; i < this.length; i++) {
@@ -14,6 +16,7 @@ Array.prototype.myshift = function () {
     return firstElement
 }
 
+const nums = [1, 2, 3]
 console.log('before: ', nums)
 console.log('result: ', nums.myshift())
-console.log('after:', nums)
+console.log('after: ', nums)
