@@ -3,11 +3,9 @@ const animals = ['pigs', 'goats', 'sheep']
 // console.log(animals)
 
 Array.prototype.mypush = function (...elements) {
-    const arrLength = this.length
     for (let i = 0; i < elements.length; i++) {
-        this[arrLength + i] = elements[i]
+        this[this.length + i] = elements[i]
     }
-
     return this.length
 }
 
